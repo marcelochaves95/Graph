@@ -269,11 +269,11 @@ namespace NodeGraph
 					node.Name = SanitizeName(name);
 					if (hasOutput)
 					{
-						node.AddPin(PinLinkType.Output, null, string.Empty);
+						node.AddPin(PinLinkType.Output, null, "");
 					}
 					if (hasInput)
 					{
-						node.AddPin(PinLinkType.Input, null, string.Empty);
+						node.AddPin(PinLinkType.Input, null, "");
 					}
 
 					node.AddPin(PinLinkType.Output, methodInfo.ReturnParameter.ParameterType, "Output");
